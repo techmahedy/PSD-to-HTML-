@@ -1,0 +1,64 @@
+.slicknav_menu{
+    display: none;
+}
+@media screen and (max-width:992px){
+    #menu{
+        display: none;
+    }
+    .slicknav_menu{
+        display: inline-block;
+        position: fixed;
+        z-index: 1000;
+        right: 0; /* For shifting responsive button in right side*/
+        background: transparent;
+        margin-top: 100px;
+    }
+    header{
+        margin-top: 100px; 
+    }
+    .slider{
+        margin-top: -100px; 
+    }
+    .slicknav_btn{
+        margin:35px 30px 0px 0px;
+        background: green;
+    }
+    .slicknav_nav{
+        background: green;
+        width: 200px;
+    }
+    .slicknav_nav li{
+        margin: 0;
+        padding: 0;
+        height: 3em;
+        line-height: 3em;
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+
+    .slicknav_nav li a{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        transition: all 0.5s ease-in;
+    }
+    .slicknav_nav li a:hover{
+        color:#002244;
+        font-weight: bold;
+        background-color: green;
+    }
+}
+
+@media screen and (max-width:330px){
+    .slider a{
+        display: inline-block;
+        width: 100%;
+    }
+    .slider .button{
+        margin-top: 20px;
+    }
+    .header a img{
+        width: 150px;
+        margin-left: 10px;
+    }
+}
